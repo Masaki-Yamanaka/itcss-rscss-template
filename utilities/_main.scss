@@ -1,0 +1,65 @@
+/*　これまでのレイヤーを上書きするスタイルを定義する　*/
+
+//PCとSP非表示
+._sp-hidden {
+  display: block;
+  @include sp {
+    display: none;
+  }
+}
+._pc-hidden {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
+
+/* stylelint-disable */
+
+//margin系
+@for $i from 1 through 20 {
+  ._ml-#{$i} {
+    margin-left: #{$i}rem !important;
+  }
+}
+@for $i from 1 through 20 {
+  ._mr-#{$i} {
+    margin-right: #{$i}rem !important;
+  }
+}
+
+@for $i from 1 through 20 {
+  ._mt-#{$i} {
+    margin-top: #{$i}rem !important;
+  }
+}
+
+@for $i from 1 through 20 {
+  ._mb-#{$i} {
+    margin-bottom: #{$i}rem !important;
+  }
+}
+
+//padding系
+@for $i from 1 through 20 {
+  ._pl-#{$i} {
+    padding-left: #{$i}rem !important;
+  }
+}
+@for $i from 1 through 20 {
+  ._pr-#{$i} {
+    padding-right: #{$i}rem !important;
+  }
+}
+@for $i from 1 through 20 {
+  ._pt-#{$i} {
+    padding-top: #{$i}rem !important;
+  }
+}
+@for $i from 1 through 20 {
+  ._pb-#{$i} {
+    padding-bottom: #{$i}rem !important;
+  }
+}
+
+/* stylelint-enable */

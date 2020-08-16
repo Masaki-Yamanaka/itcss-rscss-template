@@ -1,0 +1,35 @@
+/*
+  【メディアクエリ使用方法】
+    @include sp{
+      ...
+    }
+*/
+
+$iphone5: 320px;
+$sp: 576px;
+$tab: 768px;
+$pc: 1042px;
+
+@mixin iphone5 {
+  @media (max-width: ($iphone5)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
