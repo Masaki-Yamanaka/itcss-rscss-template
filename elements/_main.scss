@@ -9,8 +9,12 @@ body {
   font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.6;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-print-color-adjust: exact;
+  color: $black-dark-grey;
   -webkit-font-smoothing: antialiased;
+}
+
+textarea {
+  appearance: none;
+  resize: none;
+  outline: none;
 }
