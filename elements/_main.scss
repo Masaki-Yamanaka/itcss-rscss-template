@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
   color: $black-dark-grey;
   -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 textarea {
