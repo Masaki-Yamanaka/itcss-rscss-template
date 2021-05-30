@@ -34,3 +34,7 @@ Boilerplate of ITCSS and RSCSS
 - [rscss](https://rscss.io/)
   > Reasonable System for CSS Stylesheet Structure.
   > A set of simple ideas to guide your process of building maintainable CSS.
+
+## Stylelint config
+
+- [📄 stylelint-config-rscss](https://github.com/Masaki-Yamanaka/stylelint-config-rscss)
