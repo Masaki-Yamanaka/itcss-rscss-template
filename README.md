@@ -1,6 +1,6 @@
 # itcss-rscss-template
 
-Boilerplate of ITCSS and RSCSS
+Template of ITCSS and RSCSS
 
 ## Folder Structure
 
