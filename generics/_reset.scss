@@ -1,3 +1,5 @@
+/* Generic Layer */
+
 * {
   box-sizing: border-box;
 }
@@ -100,63 +102,57 @@ li {
 }
 
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
   text-decoration: none;
   color: inherit;
   outline: none;
 }
 
-textarea {
-  appearance: none;
-  resize: none;
-  outline: none;
-}
-
-button,
+/* Form Style Reset */
 input,
-optgroup,
+button,
 select,
 textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   font: inherit;
   outline: none;
-  border: none;
-  background: none;
 }
 
-button {
-  padding: 0;
-  margin: 0;
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
   cursor: pointer;
 }
 
-select {
-  appearance: none;
-  border-radius: 0;
-  border: 0;
+select::-ms-expand {
+  display: none;
 }
 
-input,
-textarea {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-// autocomplete時に背景を変えない
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px $white-dr-white inset;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-// numberの矢印を削除
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

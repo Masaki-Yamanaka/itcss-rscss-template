@@ -1,23 +1,23 @@
 // settings
-@import 'settings/colors';
-@import 'settings/fonts';
-@import 'settings/media';
-@import 'settings/shadow';
+@import "settings/color";
+@import "settings/font";
+@import "settings/media";
+@import "settings/shadow";
 
 // tools
-@import 'tools/main';
+@import "tools/main";
 
 // generic
-@import 'generic/reset';
+@import "generics/reset";
 
 // elements
-@import 'elements/main';
+@import "elements/main";
 
 // objects
-@import 'objects/common-container';
+@import "objects/main";
 
 // components
-@import 'components/button/button-common';
+@import "components/main";
 
 // utilities
-@import 'utilities/main';
+@import "utilities/main";
